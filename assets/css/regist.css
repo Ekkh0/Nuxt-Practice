@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.containerluar{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcontainerregister{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 0px 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    font-family: Lato;
+    text-align: center;
+}
+
+.formcontainerregister > h1{
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.formcontainerregister > p{
+    width: 450px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.activepage{
+    width: auto !important;
+    text-align: left;
+}
+
+.activepage > p{
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+
+.textgrey{
+    color: grey
+}
+
+.headkecil{
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 10px !important;
+    font-size: 20px !important;
+}
+
+.inputcont{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.second{
+    margin-left: 30px;
+}
+
+.registinput{
+    width: 200px;
+}
+
+.activepage{
+    display: flex;
+    flex-direction: column;
+}
+
+.regisbtncont{
+    justify-content: space-between !important;
+    /* margin-right: 30px;
+    margin-left: 30px; */
+}
+
+.finalpage > p{
+    text-align: center;
+    width: 350px;
+}
+
+.finalpage{
+    align-items: center;
+}
+
+.finaltitle{
+    width: 100%;
+}
+
+.checkimage{
+    width: 150px;
+    padding-top: 30px;
+}
+
+.progressbarcont{
+    padding: 0 100px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.2);
+}
+
+.progressbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.progressbar::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 98%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #dcdcdc;
+    counter-reset: step;
+    z-index: 1;
+}
+
+.progressbar::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 98%;
+    top: 50%;
+    left: 0;
+    transform-origin: left;
+    transform: translateY(-50%) scaleX(0.3);
+    background-color: #4A3AFF;
+    z-index: 1;
+}
+
+.progress-step{
+    width: 30px;
+    height: 30px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.progress-step-active{
+    z-index: 2;
+    background-color: #4A3AFF;
+}
+
+.progress-step-active::before{
+    color: white !important;
+}
+
+.progress-step::before{
+    counter-increment: step;
+    content: counter(step);
+    font-family: lato;
+    font-weight: 900;
+    z-index: 2;
+    color: grey;
+}
+
+.bar-step-1::after{
+    transform: translateY(-50%) scaleX(0) !important;
+}
+
+.bar-step-2::after{
+    transform: translateY(-50%) scaleX(0.5) !important;
+}
+
+.bar-step-3::after{
+    transform: translateY(-50%) scaleX(1) !important;
+}

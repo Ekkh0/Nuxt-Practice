@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.adminpage{
+    display: flex;
+    font-family: lato;
+}
+
+.sidebar{
+    height: 90vh;
+    width: 200px;
+    padding: 5vh 30px;
+    background-color: #F2F8FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admincontent{
+    padding: 50px 30px;
+    position: relative;
+}
+
+.backbtn{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    background-color: white;
+    outline: #4062FF 3px outset;
+    padding: 7px 17px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.backbtn:hover{
+    background-color: #4062FF;
+    color: white;
+    outline: 0px outset;
+}
+
+.adm-select, .logoutbtn{
+    text-decoration: none;
+    background-color: #4062FF;
+    color: #ffffff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 150px;
+    font-weight: 700;
+}
+
+.adm-select::after{
+    position: absolute;
+    content: ' ';
+    background-color: #4062FF;
+    left: -65px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.adm-select > img{
+    margin-right: 10px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(180deg) brightness(124%) contrast(116%);
+}
+
+.adm-select > p{
+    margin-right: 30px;
+}
+
+.logoutbtn{
+    background-color: transparent;
+    color: #d2691e;
+    text-decoration: none;
+}
+
+.logoutbtn > p{
+    margin-right: 30px;
+}
+
+.logoutbtn > img{
+    filter: invert(55%) sepia(27%) saturate(7407%) hue-rotate(357deg) brightness(90%) contrast(81%);
+    margin-right: 10px;
+}
+
+.admincontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1250px;
+}
+
+.topside{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    font-weight: 900;
+}
+
+.showregist{
+    display: flex;
+    justify-content: space-between;
+}
+
+.showregist > div{
+    display: flex;
+    width: 200px;
+}
+
+.showregist > div > img{
+    margin-right: 5px;
+}
+
+.activereg > div > img{
+    filter: invert(78%) sepia(35%) saturate(805%) hue-rotate(53deg) brightness(92%) contrast(88%);
+}
+
+.waitingreg > div > img{
+    filter: invert(87%) sepia(39%) saturate(3460%) hue-rotate(326deg) brightness(94%) contrast(76%);
+}
+
+.usertable{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: #4062FF 1px solid;
+    border-radius: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.headusertable{
+    display: flex;
+    justify-content: left !important;
+    width: 100%;
+}
+
+.headusertable > p{
+    margin: 10px 20px;
+    width: 100px;
+    font-weight: 900;
+}
+
+.user1{
+    width: 600px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.user1 > div, .userdivs{
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    margin: 10px 20px;
+}
+
+.number{
+    width: 20px !important;
+}
+
+.approvalcont{
+    width: 200px !important;
+}
+
+.profilepic{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.approvalcont > button{
+    background-color: #4A3AFF;
+    border: none;
+    padding: 7px 22px;
+    border-radius: 100px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.reject{
+    background: rgb(22,125,255);
+    background: linear-gradient(90deg, rgba(22,125,255,1) 0%, rgba(98,84,255,1) 27%, rgba(242,87,152,1) 100%);
+}
+
+.userdetailheadcont{
+    display: flex;
+    color: white;
+    font-weight: 700;
+    background-color: #4062FF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: #4062FF 1px solid;
+    width: 100% !important;
+    justify-content: center;
+    padding: 10px 0 !important;
+    align-items: center;
+}
+
+.detailtable > div{
+    display: flex;
+}
+
+.detailuser{
+    pointer-events: none;
+}
+
+.detailuser::placeholder{
+    color: black;
+    opacity: 1;
+}
+
+.profilepicdetailcontainer{
+    margin: 20px 0;
+}
+
+.profilepicdetail{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.files{
+    width: 80%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.userdetailseperator{
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+
+.files > *{
+    border: #4062FF 1px solid;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 10px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.approvalbtns{
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    outline: 0px outset;
+}
+
+.approvalbtns:hover{
+    outline: #4A3AFF 3px outset;
+}

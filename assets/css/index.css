@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.formcontainer{
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.form, .formpage{
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.35);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.formpage{
+    width: 530px;
+}
+
+.form{
+    width: 300px;
+}
+
+.form > div, .activepage > div{
+    display: flex;
+    justify-content: center;
+}
+
+.label, .inputtext{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.form > div > h1, .activepage > div > h1{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.2);
+    width: 90%;
+    margin: 0 0 10px 0;
+}
+
+.label{
+    font-weight: 700;
+}
+
+.inputtext{
+    border-radius: 30px;
+    border: 0.01px solid rgba(128, 128, 128, 0.2);
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.2);
+    padding: 12px 15px;
+}
+
+.btncont{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btncont > button{
+    margin: 0 20px;
+}
+
+.btncont > h4{
+    margin: 0;
+}
+
+.btncont > button{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+}
+
+.btncont > button:hover{
+    background-color: #962DFF;
+    cursor: pointer;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.background > img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    transform: rotate(180deg);
+}
